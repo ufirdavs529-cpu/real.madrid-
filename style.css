@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 150px;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+nav .blok1 img{
+    width: 40px;
+}
+nav .blok3 img{
+    width: 40px;
+}
+nav .blok3, .blok1 .img{
+    width: 70px;
+}
+nav .blok3, .blok2, .blok1{
+ display: flex;
+    align-items: center;
+    justify-content: center;
+     gap: 20px;
+}
+nav h1{
+font-size: 60px;
+}
+nav a{
+text-decoration: none;
+color: black;
+}
+nav button{
+    display: block;
+    width: 1000px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 132, 255);
+    color: rgb(0, 132, 255);
+    background-color: white;
+}
+header .box{
+background-color: rgba(127, 227, 255, 0.303);
+border-radius: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 1400px;
+
+margin: auto;
+}
+header img{
+    border-radius: 50px;
+    margin-right: 320px;
+    width: 900px;
+height: 500px;
+}
+header p{
+    font-size: 30px;
+    color: black;
+    font-family: fantasy;   
+}
+header h1{
+    margin-left: 100px;
+    font-size: 70px;
+    font-family: sans-serif;
+}
+main .s1 img {
+    width: 450px;
+    border-radius: 20px;
+}
+main .s1 .box{
+    display: flex;
+    flex-wrap: wrap;   
+}
+main .s1 .box .box1{
+    margin: auto;
+}
+main .box .box1 p{
+    font-size: 17px;
+    font-family: inherit;
+}
+main .s1 {
+    margin-top: 100px;
+}
+main .s2 img {
+    width: 450px;
+}
+main .s2 .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .s2 p{
+    text-align: center;
+    font-size: 20px;
+}
+main .s2 .p{
+    color: silver;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid silver;
+}
+footer .div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ===== Tablet — 768px va undan kichik ===== */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    nav h1 {
+        font-size: 30px;
+    }
+    nav button {
+        width: 100%;
+    }
+    header .box {
+        flex-direction: column;
+        width: 95%;
+        border-radius: 20px;
+    }
+    header img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        border-radius: 20px;
+    }
+    header h1 {
+        margin-left: 20px;
+        font-size: 40px;
+    }
+    header p {
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    main .s1 img {
+        width: 100%;
+    }
+    main .s1 {
+        margin-top: 40px;
+    }
+    main .s1 .box .box1 {
+        padding: 0 10px;
+    }
+    main .s2 img {
+        width: 120px;
+    }
+    main .s2 .box {
+        gap: 10px;
+    }
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    footer .div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+/* ===== Mobil — 480px va undan kichik ===== */
+@media (max-width: 480px) {
+    nav .blok2 {
+        display: none;
+    }
+    nav .blok3 h3 {
+        display: none;
+    }
+    nav h1 {
+        font-size: 20px;
+    }
+    nav .blok1 img,
+    nav .blok3 img {
+        width: 25px;
+    }
+    nav .blok3, .blok1 .img {
+        width: 40px;
+    }
+    nav button {
+        width: 100%;
+        height: 25px;
+    }
+    header h1 {
+        margin-left: 10px;
+        font-size: 28px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    main .s2 img {
+        width: 90px;
+    }
+    main .s2 p {
+        font-size: 16px;
+    }
+    footer .div p {
+        font-size: 12px;
+    }
+}
